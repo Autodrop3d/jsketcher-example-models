@@ -1,0 +1,1397 @@
+{
+    "model": {
+        "history": [
+            {
+                "type": "DATUM_CREATE",
+                "params": {
+                    "x": "0.000",
+                    "y": "0.000",
+                    "z": "463.465",
+                    "rotations": []
+                }
+            },
+            {
+                "type": "BOX",
+                "params": {
+                    "x": 50,
+                    "y": 50,
+                    "z": 50,
+                    "locations": "D:0",
+                    "boolean": {
+                        "kind": "NONE",
+                        "targets": []
+                    }
+                }
+            },
+            {
+                "type": "PATTERN_LINEAR",
+                "params": {
+                    "inputBodies": [
+                        "S:0"
+                    ],
+                    "patternMethod": "Step Distance",
+                    "distance": "150",
+                    "qty": 3,
+                    "direction": {
+                        "vectorEntity": "S:0/E:2",
+                        "flip": false
+                    }
+                }
+            },
+            {
+                "type": "PATTERN_LINEAR",
+                "params": {
+                    "inputBodies": [
+                        "S:2",
+                        "S:1",
+                        "S:0"
+                    ],
+                    "patternMethod": "Step Distance",
+                    "distance": "100",
+                    "qty": 3,
+                    "direction": {
+                        "vectorEntity": "S:1/E:5",
+                        "flip": false
+                    }
+                }
+            }
+        ],
+        "expressions": "",
+        "assembly": []
+    },
+    "sketches": [
+        {
+            "id": "[F:LID[S:0/SURFACE/113]|S:2/F:5|S:2/F:8|S:3/F:8|F:LID[S:0/SURFACE/113]|S:2/F:5|S:2/F:8|S:3/F:8]",
+            "data": {
+                "version": 3,
+                "objects": [
+                    {
+                        "id": "196",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": -24.796582321631263,
+                                "y": -133.04167254962638
+                            },
+                            "b": {
+                                "x": 31.28996064767449,
+                                "y": -133.04167254962638
+                            }
+                        }
+                    },
+                    {
+                        "id": "205",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": 31.28996064767449,
+                                "y": -133.04167254962638
+                            },
+                            "b": {
+                                "x": 31.28996064767449,
+                                "y": -42.777392458400385
+                            }
+                        }
+                    },
+                    {
+                        "id": "214",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": 31.28996064767449,
+                                "y": -42.777392458400385
+                            },
+                            "b": {
+                                "x": -24.796582321631263,
+                                "y": -42.777392458400385
+                            }
+                        }
+                    },
+                    {
+                        "id": "223",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": -24.796582321631263,
+                                "y": -42.777392458400385
+                            },
+                            "b": {
+                                "x": -24.796582321631263,
+                                "y": -133.04167254962638
+                            }
+                        }
+                    }
+                ],
+                "dimensions": [],
+                "labels": [],
+                "stages": [
+                    {
+                        "constraints": [
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "223:B",
+                                    "196:A"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "196:B",
+                                    "205:A"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "205:B",
+                                    "214:A"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "214:B",
+                                    "223:A"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "Horizontal",
+                                "objects": [
+                                    "196"
+                                ],
+                                "constants": {
+                                    "angle": 0
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "Horizontal",
+                                "objects": [
+                                    "214"
+                                ],
+                                "constants": {
+                                    "angle": 180
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "Vertical",
+                                "objects": [
+                                    "223"
+                                ],
+                                "constants": {
+                                    "angle": 270
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "Vertical",
+                                "objects": [
+                                    "205"
+                                ],
+                                "constants": {
+                                    "angle": 90
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            }
+                        ],
+                        "generators": []
+                    }
+                ],
+                "constants": "",
+                "metadata": {
+                    "expressionsSignature": "1660460228349"
+                }
+            }
+        },
+        {
+            "id": "[F:LID[S:0/SURFACE/113]/$2|F:LID[S:0/SURFACE/113]/$2]",
+            "data": {
+                "version": 3,
+                "objects": [
+                    {
+                        "id": "95",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": -74.52655835328021,
+                                "y": -14.763746637591412
+                            },
+                            "b": {
+                                "x": -113.32785409490948,
+                                "y": -14.763746637591412
+                            }
+                        }
+                    },
+                    {
+                        "id": "104",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": -113.32785409490948,
+                                "y": -14.763746637591412
+                            },
+                            "b": {
+                                "x": -113.32785409490948,
+                                "y": 14.575051764211775
+                            }
+                        }
+                    },
+                    {
+                        "id": "113",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": -113.32785409490948,
+                                "y": 14.575051764211775
+                            },
+                            "b": {
+                                "x": -74.52655835328021,
+                                "y": 14.575051764211775
+                            }
+                        }
+                    },
+                    {
+                        "id": "122",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": -74.52655835328021,
+                                "y": 14.575051764211775
+                            },
+                            "b": {
+                                "x": -74.52655835328021,
+                                "y": -14.763746637591412
+                            }
+                        }
+                    }
+                ],
+                "dimensions": [],
+                "labels": [],
+                "stages": [
+                    {
+                        "constraints": [
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "122:B",
+                                    "95:A"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "95:B",
+                                    "104:A"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "104:B",
+                                    "113:A"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "113:B",
+                                    "122:A"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "Horizontal",
+                                "objects": [
+                                    "95"
+                                ],
+                                "constants": {
+                                    "angle": 180
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "Horizontal",
+                                "objects": [
+                                    "113"
+                                ],
+                                "constants": {
+                                    "angle": 0
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "Vertical",
+                                "objects": [
+                                    "122"
+                                ],
+                                "constants": {
+                                    "angle": 270
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "Vertical",
+                                "objects": [
+                                    "104"
+                                ],
+                                "constants": {
+                                    "angle": 90
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            }
+                        ],
+                        "generators": []
+                    }
+                ],
+                "constants": "",
+                "metadata": {
+                    "expressionsSignature": "1660454307978"
+                }
+            }
+        },
+        {
+            "id": "[S:4/F:8|S:4/F:8]",
+            "data": {
+                "version": 3,
+                "objects": [
+                    {
+                        "id": "82",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": 47.84318192774249,
+                                "y": -25.275426207636166
+                            },
+                            "b": {
+                                "x": -21.843181927721123,
+                                "y": -25.275426207636166
+                            }
+                        }
+                    },
+                    {
+                        "id": "91",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": -21.843181927721123,
+                                "y": -25.275426207636166
+                            },
+                            "b": {
+                                "x": -21.843181927721123,
+                                "y": 40.775375133906884
+                            }
+                        }
+                    },
+                    {
+                        "id": "100",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": -21.843181927721123,
+                                "y": 40.775375133906884
+                            },
+                            "b": {
+                                "x": 47.84318192774249,
+                                "y": 40.775375133906884
+                            }
+                        }
+                    },
+                    {
+                        "id": "109",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": 47.84318192774249,
+                                "y": 40.775375133906884
+                            },
+                            "b": {
+                                "x": 47.84318192774249,
+                                "y": -25.275426207636166
+                            }
+                        }
+                    }
+                ],
+                "dimensions": [],
+                "labels": [],
+                "stages": [
+                    {
+                        "constraints": [
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "109:B",
+                                    "82:A"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "82:B",
+                                    "91:A"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "91:B",
+                                    "100:A"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "100:B",
+                                    "109:A"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "Horizontal",
+                                "objects": [
+                                    "82"
+                                ],
+                                "constants": {
+                                    "angle": 180
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "Horizontal",
+                                "objects": [
+                                    "100"
+                                ],
+                                "constants": {
+                                    "angle": 0
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "Vertical",
+                                "objects": [
+                                    "109"
+                                ],
+                                "constants": {
+                                    "angle": 270
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "Vertical",
+                                "objects": [
+                                    "91"
+                                ],
+                                "constants": {
+                                    "angle": 90
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            }
+                        ],
+                        "generators": []
+                    }
+                ],
+                "constants": "",
+                "metadata": {
+                    "expressionsSignature": "1660455817808"
+                }
+            }
+        },
+        {
+            "id": "F:BASE[S:0/SURFACE/113]",
+            "data": {
+                "boundary": {
+                    "lines": [
+                        {
+                            "id": "E:BASE[S:0/SURFACE/81]",
+                            "a": {
+                                "x": 0,
+                                "y": 75
+                            },
+                            "b": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        },
+                        {
+                            "id": "E:BASE[S:0/SURFACE/113]",
+                            "a": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "b": {
+                                "x": 125,
+                                "y": 0
+                            }
+                        },
+                        {
+                            "id": "E:BASE[S:0/SURFACE/90]",
+                            "a": {
+                                "x": 172.912878,
+                                "y": 10
+                            },
+                            "b": {
+                                "x": 188.729833,
+                                "y": 10
+                            }
+                        }
+                    ],
+                    "arcs": [
+                        {
+                            "id": "E:BASE[S:0/SURFACE/3]",
+                            "a": {
+                                "x": 0,
+                                "y": 75
+                            },
+                            "b": {
+                                "x": 52.95635500000001,
+                                "y": 53.10955200000001
+                            },
+                            "c": {
+                                "x": 2.1316282072803006e-14,
+                                "y": -7.368888859105027e-7
+                            }
+                        },
+                        {
+                            "id": "E:BASE[S:0/SURFACE/99]",
+                            "a": {
+                                "x": 172.912878,
+                                "y": 10
+                            },
+                            "b": {
+                                "x": 125,
+                                "y": 0
+                            },
+                            "c": {
+                                "x": 149.99999766497558,
+                                "y": 0
+                            }
+                        },
+                        {
+                            "id": "E:BASE[S:0/SURFACE/25]",
+                            "a": {
+                                "x": 134.667312,
+                                "y": 36.94467
+                            },
+                            "b": {
+                                "x": 188.729833,
+                                "y": 10
+                            },
+                            "c": {
+                                "x": 149.99999988585847,
+                                "y": 2.8170016541650966e-7
+                            }
+                        },
+                        {
+                            "id": "E:BASE[S:0/SURFACE/50]",
+                            "a": {
+                                "x": 52.956355,
+                                "y": 53.109552
+                            },
+                            "b": {
+                                "x": 134.667312,
+                                "y": 36.94467
+                            },
+                            "c": {
+                                "x": 105.91666679032764,
+                                "y": 106.2151573001421
+                            }
+                        }
+                    ],
+                    "circles": [],
+                    "nurbses": []
+                }
+            }
+        },
+        {
+            "id": "S:0/SURFACE",
+            "data": {
+                "version": 3,
+                "objects": [
+                    {
+                        "id": "3",
+                        "type": "Arc",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": 0,
+                                "y": 75.00000002492939
+                            },
+                            "b": {
+                                "x": -52.95635487390709,
+                                "y": 53.10955174236609
+                            },
+                            "c": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        }
+                    },
+                    {
+                        "id": "16",
+                        "type": "Segment",
+                        "role": "construction",
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "b": {
+                                "x": -150,
+                                "y": 0
+                            }
+                        }
+                    },
+                    {
+                        "id": "25",
+                        "type": "Arc",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": -134.6673118833882,
+                                "y": 36.944670462824874
+                            },
+                            "b": {
+                                "x": -188.72983346207417,
+                                "y": 10
+                            },
+                            "c": {
+                                "x": -150,
+                                "y": 0
+                            }
+                        }
+                    },
+                    {
+                        "id": "50",
+                        "type": "Arc",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": -134.6673118833882,
+                                "y": 36.944670462824874
+                            },
+                            "b": {
+                                "x": -52.95635487390709,
+                                "y": 53.10955174236609
+                            },
+                            "c": {
+                                "x": -105.91666666666487,
+                                "y": 106.21515768581209
+                            }
+                        }
+                    },
+                    {
+                        "id": "63",
+                        "type": "Segment",
+                        "role": "construction",
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": -149.0840747297868,
+                                "y": 42.92686539750326
+                            },
+                            "b": {
+                                "x": -113.24083731506853,
+                                "y": 28.05381534523798
+                            }
+                        }
+                    },
+                    {
+                        "id": "72",
+                        "type": "Segment",
+                        "role": "construction",
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": -18.394299043599638,
+                                "y": 87.56431461625553
+                            },
+                            "b": {
+                                "x": -67.36517706783383,
+                                "y": 38.74545885110122
+                            }
+                        }
+                    },
+                    {
+                        "id": "81",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": 0,
+                                "y": 75.00000002492939
+                            },
+                            "b": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        }
+                    },
+                    {
+                        "id": "90",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": -188.72983346207417,
+                                "y": 10
+                            },
+                            "b": {
+                                "x": -172.9128784747792,
+                                "y": 10
+                            }
+                        }
+                    },
+                    {
+                        "id": "99",
+                        "type": "Arc",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": -125,
+                                "y": 0
+                            },
+                            "b": {
+                                "x": -172.9128784747792,
+                                "y": 10
+                            },
+                            "c": {
+                                "x": -150,
+                                "y": 0
+                            }
+                        }
+                    },
+                    {
+                        "id": "113",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": -125,
+                                "y": 0
+                            },
+                            "b": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        }
+                    }
+                ],
+                "dimensions": [],
+                "labels": [],
+                "stages": [
+                    {
+                        "constraints": [
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "3:C",
+                                    "ground/ORIGIN"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "16:A",
+                                    "ground/ORIGIN"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "Horizontal",
+                                "objects": [
+                                    "16"
+                                ],
+                                "constants": {
+                                    "angle": "180.00"
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "25:C",
+                                    "16:B"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "SegmentLength",
+                                "objects": [
+                                    "16"
+                                ],
+                                "constants": {
+                                    "length": "150"
+                                },
+                                "stage": 0,
+                                "annotations": [
+                                    {
+                                        "offset": 20
+                                    }
+                                ]
+                            },
+                            {
+                                "typeId": "RadiusLength",
+                                "objects": [
+                                    "25"
+                                ],
+                                "constants": {
+                                    "length": "40"
+                                },
+                                "stage": 0,
+                                "annotations": [
+                                    {
+                                        "angle": 2.118533285825628
+                                    }
+                                ]
+                            },
+                            {
+                                "typeId": "RadiusLength",
+                                "objects": [
+                                    "3"
+                                ],
+                                "constants": {
+                                    "length": "75"
+                                },
+                                "stage": 0,
+                                "annotations": [
+                                    {
+                                        "angle": 1.7089626685480637
+                                    }
+                                ]
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "50:A",
+                                    "25:A"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "50:B",
+                                    "3:B"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PointOnLine",
+                                "objects": [
+                                    "50:A",
+                                    "63"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "TangentLC",
+                                "objects": [
+                                    "63",
+                                    "50"
+                                ],
+                                "constants": {
+                                    "inverted": "false"
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "TangentLC",
+                                "objects": [
+                                    "63",
+                                    "25"
+                                ],
+                                "constants": {
+                                    "inverted": "true"
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PointOnLine",
+                                "objects": [
+                                    "50:B",
+                                    "72"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "TangentLC",
+                                "objects": [
+                                    "72",
+                                    "50"
+                                ],
+                                "constants": {
+                                    "inverted": "true"
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "TangentLC",
+                                "objects": [
+                                    "72",
+                                    "3"
+                                ],
+                                "constants": {
+                                    "inverted": "false"
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "81:A",
+                                    "3:A"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "81:B",
+                                    "ground/ORIGIN"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "Vertical",
+                                "objects": [
+                                    "81"
+                                ],
+                                "constants": {
+                                    "angle": "270.00"
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "90:A",
+                                    "25:B"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "99:C",
+                                    "16:B"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "99:B",
+                                    "90:B"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "Horizontal",
+                                "objects": [
+                                    "90"
+                                ],
+                                "constants": {
+                                    "angle": "0.00"
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PointOnLine",
+                                "objects": [
+                                    "99:A",
+                                    "16"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "RadiusLength",
+                                "objects": [
+                                    "99"
+                                ],
+                                "constants": {
+                                    "length": "25"
+                                },
+                                "stage": 0,
+                                "annotations": [
+                                    {
+                                        "angle": 1.355485611910248
+                                    }
+                                ]
+                            },
+                            {
+                                "typeId": "DistancePL",
+                                "objects": [
+                                    "90:B",
+                                    "16"
+                                ],
+                                "constants": {
+                                    "distance": "10",
+                                    "inverted": "true"
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "113:A",
+                                    "99:A"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "113:B",
+                                    "ground/ORIGIN"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "EqualRadius",
+                                "objects": [
+                                    "50",
+                                    "3"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            }
+                        ],
+                        "generators": []
+                    }
+                ],
+                "constants": "",
+                "metadata": {
+                    "expressionsSignature": "1660446233291"
+                }
+            }
+        },
+        {
+            "id": "[S:7/F:4|S:7/F:4]",
+            "data": {
+                "version": 3,
+                "objects": [
+                    {
+                        "id": "95",
+                        "type": "Circle",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "c": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "r": 59.9192922036331
+                        }
+                    }
+                ],
+                "dimensions": [],
+                "labels": [],
+                "stages": [
+                    {
+                        "constraints": [
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "95:C",
+                                    "ground/ORIGIN"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            }
+                        ],
+                        "generators": []
+                    }
+                ],
+                "constants": "",
+                "metadata": {
+                    "expressionsSignature": "1660454307978"
+                }
+            }
+        },
+        {
+            "id": "F:LID[S:0/SURFACE/113]/$1",
+            "data": {
+                "version": 3,
+                "objects": [
+                    {
+                        "id": "95",
+                        "type": "Circle",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "c": {
+                                "x": 0,
+                                "y": -7.368888859105027e-7
+                            },
+                            "r": 67.8
+                        }
+                    },
+                    {
+                        "id": "101",
+                        "type": "Segment",
+                        "role": "construction",
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": 108.57949516205943,
+                                "y": 31.61222711617856
+                            },
+                            "b": {
+                                "x": 114.03118529571933,
+                                "y": -36.23102788047781
+                            }
+                        }
+                    }
+                ],
+                "dimensions": [],
+                "labels": [],
+                "stages": [
+                    {
+                        "constraints": [
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "95:C",
+                                    "boundary/E:LID[S:0/SURFACE/3]:C"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "RadiusLength",
+                                "objects": [
+                                    "95"
+                                ],
+                                "constants": {
+                                    "length": "67.8"
+                                },
+                                "stage": 0,
+                                "annotations": [
+                                    {
+                                        "angle": 0.7853981633974483
+                                    }
+                                ]
+                            }
+                        ],
+                        "generators": []
+                    }
+                ],
+                "constants": "",
+                "metadata": {
+                    "expressionsSignature": "1660446444040"
+                }
+            }
+        },
+        {
+            "id": "F:LID[S:0/SURFACE/113]",
+            "data": {
+                "version": 3,
+                "objects": [],
+                "dimensions": [],
+                "labels": [],
+                "stages": [
+                    {
+                        "constraints": [],
+                        "generators": []
+                    }
+                ],
+                "constants": "",
+                "metadata": {
+                    "expressionsSignature": "1660458679871"
+                },
+                "boundary": {
+                    "lines": [
+                        {
+                            "id": "E:LID[S:0/SURFACE/90]",
+                            "a": {
+                                "x": -188.729833,
+                                "y": 10
+                            },
+                            "b": {
+                                "x": -172.912878,
+                                "y": 10
+                            }
+                        },
+                        {
+                            "id": "E:LID[S:0/SURFACE/113]",
+                            "a": {
+                                "x": -125,
+                                "y": 0
+                            },
+                            "b": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        },
+                        {
+                            "id": "E:LID[S:0/SURFACE/81]",
+                            "a": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "b": {
+                                "x": 0,
+                                "y": 75
+                            }
+                        }
+                    ],
+                    "arcs": [
+                        {
+                            "id": "E:LID[S:0/SURFACE/3]",
+                            "a": {
+                                "x": 0,
+                                "y": 75
+                            },
+                            "b": {
+                                "x": -52.95635500000001,
+                                "y": 53.10955200000001
+                            },
+                            "c": {
+                                "x": -2.1316282072803006e-14,
+                                "y": -7.368888859105027e-7
+                            }
+                        },
+                        {
+                            "id": "E:LID[S:0/SURFACE/50]",
+                            "a": {
+                                "x": -52.956355,
+                                "y": 53.109552
+                            },
+                            "b": {
+                                "x": -134.667312,
+                                "y": 36.94467
+                            },
+                            "c": {
+                                "x": -105.91666679032764,
+                                "y": 106.2151573001421
+                            }
+                        },
+                        {
+                            "id": "E:LID[S:0/SURFACE/25]",
+                            "a": {
+                                "x": -134.667312,
+                                "y": 36.94467
+                            },
+                            "b": {
+                                "x": -188.729833,
+                                "y": 10
+                            },
+                            "c": {
+                                "x": -149.99999988585847,
+                                "y": 2.8170016541650966e-7
+                            }
+                        },
+                        {
+                            "id": "E:LID[S:0/SURFACE/99]",
+                            "a": {
+                                "x": -172.912878,
+                                "y": 10
+                            },
+                            "b": {
+                                "x": -125,
+                                "y": 0
+                            },
+                            "c": {
+                                "x": -149.99999766497558,
+                                "y": 0
+                            }
+                        }
+                    ],
+                    "circles": [],
+                    "nurbses": []
+                }
+            }
+        }
+    ]
+}
