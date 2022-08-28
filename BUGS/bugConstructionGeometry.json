@@ -1,7 +1,399 @@
 {
-"model":
-{"history":[{"type":"BOX","params":{"x":50,"y":50,"z":50,"boolean":{"kind":"NONE","targets":[]}}},{"type":"EXTRUDE","params":{"length":"25","doubleSided":false,"face":"F:FRONT","direction":{"flip":true},"boolean":{"kind":"SUBTRACT"}}}],"expressions":"","assembly":[]},
- "sketches": [
-{"id":"F:FRONT", "data": {"version":3,"objects":[{"id":"39","type":"Segment","role":"construction","stage":0,"data":{"a":{"x":0,"y":50},"b":{"x":50,"y":0}}},{"id":"48","type":"Circle","role":"construction","stage":0,"data":{"c":{"x":25,"y":25},"r":15}},{"id":"54","type":"Segment","role":null,"stage":0,"data":{"a":{"x":12.009618943243897,"y":32.500000000027626},"b":{"x":12.009618943243897,"y":17.499999999972374}}},{"id":"63","type":"Segment","role":null,"stage":0,"data":{"a":{"x":12.009618943243897,"y":17.499999999972374},"b":{"x":25.00000000007975,"y":9.99999999996279}}},{"id":"72","type":"Segment","role":null,"stage":0,"data":{"a":{"x":25.00000000007975,"y":9.99999999996279},"b":{"x":37.99038105690852,"y":17.499999999972374}}},{"id":"81","type":"Segment","role":null,"stage":0,"data":{"a":{"x":37.99038105690852,"y":17.499999999972374},"b":{"x":37.99038105690852,"y":32.500000000027626}}},{"id":"90","type":"Segment","role":null,"stage":0,"data":{"a":{"x":37.99038105690852,"y":32.500000000027626},"b":{"x":25.00000000007975,"y":40.00000000003721}}},{"id":"99","type":"Segment","role":null,"stage":0,"data":{"a":{"x":25.00000000007975,"y":40.00000000003721},"b":{"x":12.009618943243897,"y":32.500000000027626}}}],"dimensions":[],"labels":[],"stages":[{"constraints":[{"typeId":"PCoincident","objects":["39:A","boundary/S:0/E:1:A"],"stage":0,"annotations":[]},{"typeId":"PCoincident","objects":["39:B","boundary/S:0/E:9:B"],"stage":0,"annotations":[]},{"typeId":"PointInMiddle","objects":["48:C","39"],"stage":0,"annotations":[]},{"typeId":"PointOnLine","objects":["48:C","39"],"stage":0,"annotations":[]},{"typeId":"RadiusLength","objects":["48"],"constants":{"length":"15"},"stage":0,"annotations":[{"angle":0.7853981633974483}]},{"typeId":"PCoincident","objects":["63:A","54:B"],"stage":0,"annotations":[]},{"typeId":"PCoincident","objects":["72:A","63:B"],"stage":0,"annotations":[]},{"typeId":"PCoincident","objects":["81:A","72:B"],"stage":0,"annotations":[]},{"typeId":"PCoincident","objects":["90:A","81:B"],"stage":0,"annotations":[]},{"typeId":"PCoincident","objects":["99:A","90:B"],"stage":0,"annotations":[]},{"typeId":"PCoincident","objects":["99:B","54:A"],"stage":0,"annotations":[]},{"typeId":"Vertical","objects":["54"],"constants":{"angle":"270.00"},"stage":0,"annotations":[]},{"typeId":"Vertical","objects":["81"],"constants":{"angle":"90.00"},"stage":0,"annotations":[]},{"typeId":"PointOnCircle","objects":["99:B","48"],"stage":0,"annotations":[]},{"typeId":"PointOnCircle","objects":["54:B","48"],"stage":0,"annotations":[]},{"typeId":"PointOnCircle","objects":["72:B","48"],"stage":0,"annotations":[]},{"typeId":"PointOnCircle","objects":["81:B","48"],"stage":0,"annotations":[]},{"typeId":"PointOnCircle","objects":["90:B","48"],"stage":0,"annotations":[]},{"typeId":"PointOnCircle","objects":["63:B","48"],"stage":0,"annotations":[]},{"typeId":"EqualLength","objects":["99","54"],"stage":0,"annotations":[]},{"typeId":"EqualLength","objects":["54","63"],"stage":0,"annotations":[]},{"typeId":"EqualLength","objects":["54","72"],"stage":0,"annotations":[]},{"typeId":"EqualLength","objects":["81","54"],"stage":0,"annotations":[]}],"generators":[]}],"constants":"","metadata":{"expressionsSignature":"1661718757382"}}}
-]
+    "model": {
+        "history": [
+            {
+                "type": "BOX",
+                "params": {
+                    "x": 50,
+                    "y": 50,
+                    "z": 50,
+                    "boolean": {
+                        "kind": "NONE",
+                        "targets": []
+                    }
+                }
+            },
+            {
+                "type": "EXTRUDE",
+                "params": {
+                    "length": "25",
+                    "doubleSided": false,
+                    "face": "F:FRONT",
+                    "direction": {
+                        "flip": true
+                    },
+                    "boolean": {
+                        "kind": "SUBTRACT"
+                    }
+                }
+            }
+        ],
+        "expressions": "",
+        "assembly": []
+    },
+    "sketches": [
+        {
+            "id": "F:FRONT",
+            "data": {
+                "version": 3,
+                "objects": [
+                    {
+                        "id": "39",
+                        "type": "Segment",
+                        "role": "construction",
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": 0,
+                                "y": 50
+                            },
+                            "b": {
+                                "x": 50,
+                                "y": 0
+                            }
+                        }
+                    },
+                    {
+                        "id": "48",
+                        "type": "Circle",
+                        "role": "construction",
+                        "stage": 0,
+                        "data": {
+                            "c": {
+                                "x": 25,
+                                "y": 25
+                            },
+                            "r": 15
+                        }
+                    },
+                    {
+                        "id": "54",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": 12.009618943243897,
+                                "y": 32.500000000027626
+                            },
+                            "b": {
+                                "x": 12.009618943243897,
+                                "y": 17.499999999972374
+                            }
+                        }
+                    },
+                    {
+                        "id": "63",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": 12.009618943243897,
+                                "y": 17.499999999972374
+                            },
+                            "b": {
+                                "x": 25.00000000007975,
+                                "y": 9.99999999996279
+                            }
+                        }
+                    },
+                    {
+                        "id": "72",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": 25.00000000007975,
+                                "y": 9.99999999996279
+                            },
+                            "b": {
+                                "x": 37.99038105690852,
+                                "y": 17.499999999972374
+                            }
+                        }
+                    },
+                    {
+                        "id": "81",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": 37.99038105690852,
+                                "y": 17.499999999972374
+                            },
+                            "b": {
+                                "x": 37.99038105690852,
+                                "y": 32.500000000027626
+                            }
+                        }
+                    },
+                    {
+                        "id": "90",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": 37.99038105690852,
+                                "y": 32.500000000027626
+                            },
+                            "b": {
+                                "x": 25.00000000007975,
+                                "y": 40.00000000003721
+                            }
+                        }
+                    },
+                    {
+                        "id": "99",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": 25.00000000007975,
+                                "y": 40.00000000003721
+                            },
+                            "b": {
+                                "x": 12.009618943243897,
+                                "y": 32.500000000027626
+                            }
+                        }
+                    }
+                ],
+                "dimensions": [],
+                "labels": [],
+                "stages": [
+                    {
+                        "constraints": [
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "39:A",
+                                    "boundary/S:0/E:1:A"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "39:B",
+                                    "boundary/S:0/E:9:B"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PointInMiddle",
+                                "objects": [
+                                    "48:C",
+                                    "39"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PointOnLine",
+                                "objects": [
+                                    "48:C",
+                                    "39"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "RadiusLength",
+                                "objects": [
+                                    "48"
+                                ],
+                                "constants": {
+                                    "length": "15"
+                                },
+                                "stage": 0,
+                                "annotations": [
+                                    {
+                                        "angle": 0.7853981633974483
+                                    }
+                                ]
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "63:A",
+                                    "54:B"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "72:A",
+                                    "63:B"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "81:A",
+                                    "72:B"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "90:A",
+                                    "81:B"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "99:A",
+                                    "90:B"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "99:B",
+                                    "54:A"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "Vertical",
+                                "objects": [
+                                    "54"
+                                ],
+                                "constants": {
+                                    "angle": "270.00"
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "Vertical",
+                                "objects": [
+                                    "81"
+                                ],
+                                "constants": {
+                                    "angle": "90.00"
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PointOnCircle",
+                                "objects": [
+                                    "99:B",
+                                    "48"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PointOnCircle",
+                                "objects": [
+                                    "54:B",
+                                    "48"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PointOnCircle",
+                                "objects": [
+                                    "72:B",
+                                    "48"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PointOnCircle",
+                                "objects": [
+                                    "81:B",
+                                    "48"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PointOnCircle",
+                                "objects": [
+                                    "90:B",
+                                    "48"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PointOnCircle",
+                                "objects": [
+                                    "63:B",
+                                    "48"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "EqualLength",
+                                "objects": [
+                                    "99",
+                                    "54"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "EqualLength",
+                                "objects": [
+                                    "54",
+                                    "63"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "EqualLength",
+                                "objects": [
+                                    "54",
+                                    "72"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "EqualLength",
+                                "objects": [
+                                    "81",
+                                    "54"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            }
+                        ],
+                        "generators": []
+                    }
+                ],
+                "constants": "",
+                "metadata": {
+                    "expressionsSignature": "1661718757382"
+                }
+            }
+        }
+    ]
 }
