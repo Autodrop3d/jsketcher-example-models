@@ -1,0 +1,391 @@
+{
+    "model": {
+        "history": [
+            {
+                "type": "PLANE",
+                "params": {
+                    "orientation": "XY",
+                    "depth": 0,
+                    "featureId": "1"
+                }
+            },
+            {
+                "type": "PLANE",
+                "params": {
+                    "orientation": "XY",
+                    "depth": "500",
+                    "featureId": "2"
+                }
+            },
+            {
+                "type": "PLANE",
+                "params": {
+                    "orientation": "XY",
+                    "depth": "1000",
+                    "featureId": "3"
+                }
+            },
+            {
+                "type": "LOFT",
+                "params": {
+                    "loops": [
+                        "S:0/SURFACE/L:0",
+                        "S:1/SURFACE/L:0",
+                        "S:2/SURFACE/L:0"
+                    ],
+                    "loftType": "smooth",
+                    "boolean": {
+                        "kind": "NONE",
+                        "simplify": true,
+                        "targets": []
+                    },
+                    "featureId": "4"
+                }
+            }
+        ],
+        "expressions": "",
+        "assembly": [],
+        "counters": {
+            "featureId": 7
+        }
+    },
+    "sketches": [
+        {
+            "id": "S:1/SURFACE",
+            "data": {
+                "version": 3,
+                "objects": [
+                    {
+                        "id": "3",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": -247,
+                                "y": 270.74997446313535
+                            },
+                            "b": {
+                                "x": 243,
+                                "y": 270.74997446313535
+                            }
+                        }
+                    },
+                    {
+                        "id": "12",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": 243,
+                                "y": 270.74997446313535
+                            },
+                            "b": {
+                                "x": 243,
+                                "y": -217.25002553686465
+                            }
+                        }
+                    },
+                    {
+                        "id": "21",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": 243,
+                                "y": -217.25002553686465
+                            },
+                            "b": {
+                                "x": -247,
+                                "y": -217.25002553686465
+                            }
+                        }
+                    },
+                    {
+                        "id": "30",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": -247,
+                                "y": -217.25002553686465
+                            },
+                            "b": {
+                                "x": -247,
+                                "y": 270.74997446313535
+                            }
+                        }
+                    }
+                ],
+                "dimensions": [],
+                "labels": [],
+                "stages": [
+                    {
+                        "constraints": [
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "30:B",
+                                    "3:A"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "3:B",
+                                    "12:A"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "12:B",
+                                    "21:A"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "21:B",
+                                    "30:A"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "Horizontal",
+                                "objects": [
+                                    "3"
+                                ],
+                                "constants": {
+                                    "angle": 0
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "Horizontal",
+                                "objects": [
+                                    "21"
+                                ],
+                                "constants": {
+                                    "angle": 180
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "Vertical",
+                                "objects": [
+                                    "30"
+                                ],
+                                "constants": {
+                                    "angle": 90
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "Vertical",
+                                "objects": [
+                                    "12"
+                                ],
+                                "constants": {
+                                    "angle": 270
+                                },
+                                "stage": 0,
+                                "annotations": []
+                            }
+                        ],
+                        "generators": []
+                    }
+                ],
+                "constants": "",
+                "metadata": {
+                    "expressionsSignature": "1672289368491"
+                }
+            }
+        },
+        {
+            "id": "S:2/SURFACE",
+            "data": {
+                "version": 3,
+                "objects": [
+                    {
+                        "id": "18",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": -297.115915610885,
+                                "y": 245.51000375022167
+                            },
+                            "b": {
+                                "x": -305.4234077307188,
+                                "y": -224.05068270555424
+                            }
+                        }
+                    },
+                    {
+                        "id": "27",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": -305.4234077307188,
+                                "y": -224.05068270555424
+                            },
+                            "b": {
+                                "x": 169.5199889598504,
+                                "y": -132.76853013353903
+                            }
+                        }
+                    },
+                    {
+                        "id": "36",
+                        "type": "Segment",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "a": {
+                                "x": 169.5199889598504,
+                                "y": -132.76853013353903
+                            },
+                            "b": {
+                                "x": 280.1986689819878,
+                                "y": 235.92041116169744
+                            }
+                        }
+                    },
+                    {
+                        "id": "45",
+                        "type": "BezierCurve",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "cp1": {
+                                "x": -297.115915610885,
+                                "y": 245.51000375022167
+                            },
+                            "cp2": {
+                                "x": -43.819570700782094,
+                                "y": 560.8445704426828
+                            },
+                            "cp3": {
+                                "x": 29.186476764061176,
+                                "y": 350.6262254841175
+                            },
+                            "cp4": {
+                                "x": 280.1986689819878,
+                                "y": 235.92041116169744
+                            }
+                        }
+                    }
+                ],
+                "dimensions": [],
+                "labels": [],
+                "stages": [
+                    {
+                        "constraints": [
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "27:A",
+                                    "18:B"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "36:A",
+                                    "27:B"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "45:2:A",
+                                    "36:B"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            },
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "45:1:A",
+                                    "18:A"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            }
+                        ],
+                        "generators": []
+                    }
+                ],
+                "constants": "",
+                "metadata": {
+                    "expressionsSignature": "1672289368491"
+                }
+            }
+        },
+        {
+            "id": "S:0/SURFACE",
+            "data": {
+                "version": 3,
+                "objects": [
+                    {
+                        "id": "3",
+                        "type": "Circle",
+                        "role": null,
+                        "stage": 0,
+                        "data": {
+                            "c": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "r": 173.80608213682063
+                        }
+                    }
+                ],
+                "dimensions": [],
+                "labels": [],
+                "stages": [
+                    {
+                        "constraints": [
+                            {
+                                "typeId": "PCoincident",
+                                "objects": [
+                                    "3:C",
+                                    "ground/ORIGIN"
+                                ],
+                                "stage": 0,
+                                "annotations": []
+                            }
+                        ],
+                        "generators": []
+                    }
+                ],
+                "constants": "",
+                "metadata": {
+                    "expressionsSignature": "1672289368491"
+                }
+            }
+        }
+    ]
+}

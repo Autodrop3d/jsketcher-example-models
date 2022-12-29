@@ -1,0 +1,227 @@
+{
+    "model": {
+        "history": [
+            {
+                "type": "DATUM_CREATE",
+                "params": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "rotations": [],
+                    "featureId": "1"
+                }
+            },
+            {
+                "type": "DATUM_CREATE",
+                "params": {
+                    "x": "0",
+                    "y": "0",
+                    "z": "200",
+                    "rotations": [],
+                    "featureId": "2"
+                }
+            },
+            {
+                "type": "DATUM_CREATE",
+                "params": {
+                    "x": 0,
+                    "y": 0,
+                    "z": "400",
+                    "rotations": [],
+                    "featureId": "3"
+                }
+            },
+            {
+                "type": "DATUM_CREATE",
+                "params": {
+                    "x": 0,
+                    "y": 0,
+                    "z": "600",
+                    "rotations": [],
+                    "featureId": "4"
+                }
+            },
+            {
+                "type": "DATUM_CREATE",
+                "params": {
+                    "x": 0,
+                    "y": 0,
+                    "z": "800",
+                    "rotations": [],
+                    "featureId": "5"
+                }
+            },
+            {
+                "type": "DATUM_CREATE",
+                "params": {
+                    "x": 0,
+                    "y": 0,
+                    "z": "1000",
+                    "rotations": [],
+                    "featureId": "6"
+                }
+            },
+            {
+                "type": "DATUM_CREATE",
+                "params": {
+                    "x": 0,
+                    "y": 0,
+                    "z": "1200",
+                    "rotations": [],
+                    "featureId": "7"
+                }
+            },
+            {
+                "type": "DATUM_CREATE",
+                "params": {
+                    "x": 0,
+                    "y": 0,
+                    "z": "1400",
+                    "rotations": [],
+                    "featureId": "8"
+                }
+            },
+            {
+                "type": "DATUM_CREATE",
+                "params": {
+                    "x": 0,
+                    "y": 0,
+                    "z": "1600",
+                    "rotations": [],
+                    "featureId": "9"
+                }
+            },
+            {
+                "type": "CYLINDER",
+                "params": {
+                    "diameter": 50,
+                    "height": 50,
+                    "locations": "D:0",
+                    "boolean": {
+                        "kind": "NONE",
+                        "simplify": true,
+                        "targets": []
+                    },
+                    "featureId": "10"
+                }
+            },
+            {
+                "type": "BOX",
+                "params": {
+                    "x": 50,
+                    "y": 50,
+                    "z": 50,
+                    "locations": "D:1",
+                    "boolean": {
+                        "kind": "NONE",
+                        "simplify": true,
+                        "targets": []
+                    },
+                    "featureId": "11"
+                }
+            },
+            {
+                "type": "CONE",
+                "params": {
+                    "diameterA": 50,
+                    "diameterB": 25,
+                    "height": 50,
+                    "boolean": {
+                        "kind": "NONE",
+                        "simplify": true,
+                        "targets": []
+                    },
+                    "featureId": "12",
+                    "locations": "D:2"
+                }
+            },
+            {
+                "type": "CONE",
+                "params": {
+                    "diameterA": 50,
+                    "diameterB": "0",
+                    "height": 50,
+                    "locations": "D:3",
+                    "boolean": {
+                        "kind": "NONE",
+                        "simplify": true,
+                        "targets": []
+                    },
+                    "featureId": "13"
+                }
+            },
+            {
+                "type": "CONE",
+                "params": {
+                    "diameterA": "0",
+                    "diameterB": "50",
+                    "height": 50,
+                    "locations": "D:4",
+                    "boolean": {
+                        "kind": "NONE",
+                        "simplify": true,
+                        "targets": []
+                    },
+                    "featureId": "14"
+                }
+            },
+            {
+                "type": "SPHERE",
+                "params": {
+                    "radius": 50,
+                    "locations": "D:5",
+                    "boolean": {
+                        "kind": "NONE",
+                        "simplify": true,
+                        "targets": []
+                    },
+                    "featureId": "15"
+                }
+            },
+            {
+                "type": "TORUS",
+                "params": {
+                    "radius": 50,
+                    "tubeRadius": 10,
+                    "locations": "D:6",
+                    "boolean": {
+                        "kind": "NONE",
+                        "simplify": true,
+                        "targets": []
+                    },
+                    "featureId": "16"
+                }
+            },
+            {
+                "type": "PLANE",
+                "params": {
+                    "orientation": "ZY",
+                    "depth": "-150",
+                    "featureId": "17"
+                }
+            },
+            {
+                "type": "MIRROR_BODY",
+                "params": {
+                    "face": "S:7/SURFACE",
+                    "inputBodies": [
+                        "S:0",
+                        "S:1",
+                        "S:2",
+                        "S:3",
+                        "S:4",
+                        "S:5",
+                        "S:6"
+                    ],
+                    "featureId": "18"
+                }
+            }
+        ],
+        "expressions": "",
+        "assembly": [],
+        "counters": {
+            "featureId": 18
+        }
+    },
+    "sketches": []
+}
